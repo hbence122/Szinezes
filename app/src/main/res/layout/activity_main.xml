@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/relativeLayout"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_RGB"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:layout_below="@id/seek_B"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textR"
+        android:layout_below="@id/textView_RGB"
+        android:layout_marginBottom="20dp"
+        android:textSize="25dp"
+        android:text="RED: "
+        android:textColor="@color/colorAccent"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/valueR"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/textR"
+        android:layout_below="@id/textView_RGB"
+        android:textColor="@color/colorAccent"
+        android:textSize="25dp"
+        android:layout_marginBottom="20dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textG"
+        android:layout_below="@id/textR"
+        android:layout_marginBottom="20dp"
+        android:textSize="25dp"
+        android:text="GREEN: "
+        android:textColor="@color/colorAccent"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/valueG"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/textG"
+        android:layout_below="@id/textR"
+        android:textColor="@color/colorAccent"
+        android:textSize="25dp"
+        android:layout_marginBottom="20dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textB"
+        android:layout_below="@id/textG"
+        android:layout_marginBottom="20dp"
+        android:textSize="25dp"
+        android:text="BLUE: "
+        android:textColor="@color/colorAccent"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/valueB"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/textB"
+        android:layout_below="@id/textG"
+        android:textColor="@color/colorAccent"
+        android:textSize="25dp"
+        android:layout_marginBottom="20dp"
+        />
+
+
+
+
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seek_R"
+        android:max="255"
+        android:layout_marginHorizontal="10dp"
+        android:padding="20dp"
+        android:background="@color/colorSeekBc"
+
+
+        />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seek_G"
+        android:layout_below="@id/seek_R"
+        android:max="255"
+        android:layout_marginHorizontal="10dp"
+        android:padding="20dp"
+        android:background="@color/colorSeekBc"
+
+        />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seek_B"
+        android:layout_below="@id/seek_G"
+        android:max="255"
+        android:layout_marginHorizontal="10dp"
+        android:padding="20dp"
+        android:background="@color/colorSeekBc"
+        />
+
+
+
+</RelativeLayout>
