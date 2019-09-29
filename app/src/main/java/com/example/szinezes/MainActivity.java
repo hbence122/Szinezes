@@ -15,7 +15,7 @@ import java.util.Random;
 public class MainActivity extends AppCompatActivity {
 
     private RelativeLayout relativeLayout;
-    private Button button_RGB;
+
     private TextView textView_RGB;
     private TextView textR;
     private TextView textG;
